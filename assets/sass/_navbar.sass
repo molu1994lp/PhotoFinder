@@ -1,0 +1,22 @@
+@import './_variables'
+nav
+  position: fixed
+  top: 0
+  width: 100%
+  .nav-wrapper
+    display: flex
+    background-color: $base-color
+    justify-content: space-between
+    .logo-img
+      max-width: 100px
+      heigth: auto
+    .logo, .search
+      color: $color-4
+      font-size: $font-size-logo
+      padding: 1.2rem
+      font-family: $font-family
+    .search:hover
+      background-color: $color-3
+    .search a
+        text-decoration: none
+        color: $color-4

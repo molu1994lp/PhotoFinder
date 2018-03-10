@@ -1,0 +1,15 @@
+{
+  "name": "cmrecruitment",
+  "version": "1.0.0",
+  "description": "code sample for Code Mine company",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Piotr Mol",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.9",
+    "angular-route": "^1.6.9"
+  }
+}

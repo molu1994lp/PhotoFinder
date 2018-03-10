@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Photo finder</title>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <script src="node_modules/angular/angular.js"></script>
+   <script src="./app/index.js"></script>
+   <script src="./app/controllers/homeController.js"></script>
+   <script src="./app/controllers/searchController.js"></script>
+   <script src="./app/services/service.js"></script>
+   <script src="/node_modules/angular-route/angular-route.js"></script>
+   <link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet"/>
+   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+   <link href="./assets/css/style.css" rel="stylesheet"/>
+</head>
+<body ng-app="app-module">
+  <nav>
+    <div class="nav-wrapper">
+      <div class="logo">
+        <img class="logo-img"src="./assets/img/flickr.png"/><span> Photo finder</span>
+      </div>
+      <div class="search">
+        <a href="#!/">Search</a>
+      </div>
+    </div>
+  </nav>
+  <main class="main">
+    <div class="content" ng-view >
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-wrapper">
+      <p>Created by <a href="https://github.com/molu1994lp" target="_blank">Piotr Mol</a></p>
+    </div>
+  </footer>
+</body>
+</html>

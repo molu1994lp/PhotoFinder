@@ -1,0 +1,19 @@
+@import './variables'
+
+.home-wrapper
+  font-size: $font-size-large
+  background-color: $color-2
+  padding: 2rem
+  .home-input
+    width: 100%
+  .tittle
+    border-bottom: 1px solid black
+
+
+@media (max-width: 600px)
+  .home-wrapper
+    font-size: $font-size-small
+
+@media(min-width: 601px) and (max-width: 900px)
+  .home-wrapper
+    font-size: $font-size-medium
