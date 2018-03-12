@@ -10,7 +10,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #8EE4AF; }
+  background-color: #6F2232; }
 
 *, *:before, *:after {
   box-sizing: inherit; }
@@ -24,51 +24,93 @@ nav {
   width: 100%; }
   nav .nav-wrapper {
     display: flex;
-    background-color: #5CDB95;
+    background-color: #1A1A1D;
     justify-content: space-between; }
     nav .nav-wrapper .logo-img {
       max-width: 100px;
       heigth: auto; }
     nav .nav-wrapper .logo, nav .nav-wrapper .search {
-      color: #05386B;
+      color: #C3073F;
       font-size: 1.7rem;
       padding: 1.2rem;
       font-family: "Boogaloo", cursive; }
+    nav .nav-wrapper .search {
+      text-decoration: none; }
     nav .nav-wrapper .search:hover {
-      background-color: #379683; }
+      background-color: #950740; }
     nav .nav-wrapper .search a {
       text-decoration: none;
-      color: #05386B; }
+      color: #C3073F; }
 
+@media (max-width: 430px) {
+  .logo img {
+    display: none; } }
 footer {
-  margin-top: auto;
+  position: fixed;
+  bottom: 0;
   width: 100%; }
   footer .footer-wrapper {
     display: flex;
-    background-color: #5CDB95;
+    background-color: #1A1A1D;
     justify-content: center; }
     footer .footer-wrapper p {
       padding: 1.2rem;
-      color: #05386B;
+      color: #C3073F;
       font-size: 1.7rem;
       margin: 0;
       font-family: "Boogaloo", cursive; }
+    footer .footer-wrapper a {
+      text-decoration: none;
+      color: #4E4E50; }
 
 .main {
   display: flex;
   margin-top: 4.4rem;
-  align-items: center;
+  align-items: flex-start;
   font-family: "Raleway", sans-serif;
-  height: 100%; }
+  height: 100%;
+  width: 80vw; }
+  .main .content {
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    margin-top: 6rem;
+    margin-bottom: 4.4rem; }
 
 .home-wrapper {
   font-size: 2.5em;
-  background-color: #EDF5E1;
-  padding: 2rem; }
+  background-color: #1A1A1D;
+  padding: 2rem;
+  border-radius: 7px;
+  font-family: "Raleway", sans-serif; }
   .home-wrapper .home-input {
-    width: 100%; }
+    width: 100%;
+    font-size: 1.4rem; }
+  .home-wrapper .home-input:focus {
+    border: 3px solid #4E4E50;
+    outline: none;
+    box-shadow: 2px 2px 5px 1px #6f2232; }
   .home-wrapper .tittle {
-    border-bottom: 1px solid black; }
+    color: #4E4E50;
+    border-bottom: 1px solid #4E4E50;
+    padding-bottom: 0.2rem; }
+  .home-wrapper .button-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    padding-top: 10px; }
+    .home-wrapper .button-wrapper .submit-form {
+      background-color: #C3073F;
+      font-size: 1.4rem;
+      border: 1px solid #950740;
+      color: #1A1A1D;
+      border-radius: 7px;
+      width: 150px; }
+    .home-wrapper .button-wrapper .submit-form:hover {
+      background-color: #950740;
+      cursor: pointer; }
+    .home-wrapper .button-wrapper .submit-form:focus {
+      outline: none; }
 
 @media (max-width: 600px) {
   .home-wrapper {
@@ -76,5 +118,60 @@ footer {
 @media(min-width: 601px) and (max-width: 900px) {
   .home-wrapper {
     font-size: 1.8rem; } }
+.finded-photo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: -4rem; }
+  .finded-photo .title {
+    color: #1A1A1D;
+    font-size: 2.5em;
+    padding: 0.8rem;
+    font-family: "Raleway", sans-serif;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #1A1A1D; }
+  .finded-photo .images {
+    height: 200px;
+    width: auto;
+    border: 2px solid #4E4E50;
+    margin: 10px 0; }
+  .finded-photo .images:hover {
+    opacity: 0.7;
+    cursor: pointer; }
+
+.zoom {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.95); }
+  .zoom .modal-belt {
+    margin-left: 97%;
+    margin-top: 1%; }
+    .zoom .modal-belt .closer {
+      font-size: 1.7rem;
+      color: #C3073F; }
+    .zoom .modal-belt .closer:hover {
+      cursor: pointer; }
+  .zoom .modal-img-wrapper {
+    display: flex;
+    justify-content: center; }
+    .zoom .modal-img-wrapper .modal-img {
+      margin-top: 5%;
+      text-align: center; }
+  .zoom .exif {
+    color: #C3073F;
+    text-align: center;
+    padding-top: 20px; }
+
+@media (max-width: 600px) {
+  .images {
+    height: 150px !important;
+    width: 150px !important; } }
 
 /*# sourceMappingURL=style.css.map */

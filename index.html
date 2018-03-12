@@ -7,7 +7,7 @@
    <script src="node_modules/angular/angular.js"></script>
    <script src="./app/index.js"></script>
    <script src="./app/controllers/homeController.js"></script>
-   <script src="./app/controllers/searchController.js"></script>
+   <script src="./app/controllers/findedController.js"></script>
    <script src="./app/services/service.js"></script>
    <script src="/node_modules/angular-route/angular-route.js"></script>
    <link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet"/>
@@ -20,11 +20,10 @@
       <div class="logo">
         <img class="logo-img"src="./assets/img/flickr.png"/><span> Photo finder</span>
       </div>
-      <div class="search">
-        <a href="#!/">Search</a>
-      </div>
+      <a class="search" href="#!/">Search</a>
     </div>
   </nav>
+
   <main class="main">
     <div class="content" ng-view >
 

@@ -1,0 +1,56 @@
+@import './variables'
+
+.finded-photo
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-around
+  width: 100%
+  margin-top: -4rem
+  .title
+    color: $base-color
+    font-size: $font-size-large
+    padding: 0.8rem
+    font-family: $font-family-content
+    width: 100%
+    text-align: center
+    border-bottom: 1px solid $base-color
+  .images
+    height: 200px
+    width: auto
+    border: 2px solid $color-2
+    margin: 10px 0
+  .images:hover
+    opacity: 0.7
+    cursor: pointer
+.zoom
+  display: none
+  position: fixed
+  z-index: 10
+  top: 0
+  right: 0
+  height: 100vh
+  width: 100vw
+  background-color: rgba(0,0,0,0.95)
+  .modal-belt
+    margin-left: 97%
+    margin-top: 1%
+    .closer
+      font-size: $font-size-logo
+      color: $color-4
+    .closer:hover
+      cursor: pointer
+  .modal-img-wrapper
+    display: flex
+    justify-content: center
+    .modal-img
+      margin-top: 5%
+      text-align: center
+  .exif
+    color: $color-4
+    text-align: center
+    padding-top: 20px
+
+@media (max-width: 600px)
+  .images
+    height: 150px !important
+    width: 150px !important

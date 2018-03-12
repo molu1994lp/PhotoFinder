@@ -2,14 +2,38 @@
 
 .home-wrapper
   font-size: $font-size-large
-  background-color: $color-2
+  background-color: $base-color
   padding: 2rem
+  border-radius: 7px
+  font-family: $font-family-content
   .home-input
     width: 100%
+    font-size: $font-size-small
+  .home-input:focus
+    border: 3px solid $color-2
+    outline: none
+    box-shadow: 2px 2px 5px 1px rgba(111,34,50,1)
   .tittle
-    border-bottom: 1px solid black
-
-
+    color: $color-2
+    border-bottom: 1px solid $color-2
+    padding-bottom: 0.2rem
+  .button-wrapper
+    display: flex
+    width: 100%
+    justify-content: flex-end
+    padding-top: 10px
+    .submit-form
+      background-color: $color-4
+      font-size: $font-size-small
+      border: 1px solid $color-3
+      color: $base-color
+      border-radius: 7px
+      width: 150px
+    .submit-form:hover
+      background-color: $color-3
+      cursor: pointer
+    .submit-form:focus
+      outline: none
 @media (max-width: 600px)
   .home-wrapper
     font-size: $font-size-small

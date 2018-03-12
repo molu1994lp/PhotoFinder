@@ -1,0 +1,18 @@
+
+<div class="" ng-controller="findedController" >
+  <div class="zoom">
+    <div class="modal-belt">
+      <span class="closer">X</span>
+    </div>
+    <div class="modal-img-wrapper">
+      <img class="modal-img" src="https://farm5.staticflickr.com/4786/25871394237_f4668c1297.jpg"/>
+    </div>
+      <p class="exif">{{exifDate.tag}} {{exifDate.raw['_content']}}</p>
+  </div>
+  <div class="finded-photo">
+    <div class="title">
+      <p>Resluts of searching</p>
+    </div>
+    <img  ng-repeat="photo in photosList" class="images" src="{{photo.url}}" date-id="{{photo.id}}" ng-click="showPic($event)"/>
+  </div>
+</div>
